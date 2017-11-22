@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/Science"
+        android:title="science"
+        android:orderInCategory="100" />
+    <item
+        android:title="simple"
+        android:id="@+id/Simple"
+        android:orderInCategory="100"/>
+    <item
+        android:title="angle"
+        android:id="@+id/Angle"
+        android:orderInCategory="100"/>
+    <item
+        android:title="temperature"
+        android:id="@+id/Temperature"
+        android:orderInCategory="100"/>
+    <item
+        android:title="sys"
+        android:id="@+id/Sys"
+        android:orderInCategory="100"/>
+    <item
+        android:title="date"
+        android:id="@+id/Date"
+        android:orderInCategory="100"/>
+    <item
+        android:title="help"
+        android:id="@+id/Help"
+        android:orderInCategory="100"/>
+
+
+
+</menu>

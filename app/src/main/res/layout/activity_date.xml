@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="日期转换"
+        android:layout_gravity = "center"
+        android:textSize = "30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom = "20dp"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center"
+        android:orientation = "horizontal">
+        <TextView
+            android:gravity = "center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Month-"/>
+        <TextView
+            android:gravity = "center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Day-"/>
+        <TextView
+            android:gravity = "center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Year"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_marginLeft = "45dp"
+        android:background="#ff534bff"
+        android:weightSum="1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/monthStart"
+            android:ems = "5"
+            android:layout_weight="1"
+            android:text = "January"
+            android:layout_marginRight = "10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#fffdfffb" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/dayStart"
+            android:inputType = "number"
+            android:layout_weight="1"
+            android:text = "1"
+            android:layout_marginRight = "10dp"
+            android:ems = "3"
+            android:background="#fffdffff" />
+
+        <EditText
+            android:id="@+id/yearStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fffffffb"
+            android:ems="5"
+            android:inputType="number"
+            android:text="2015" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:text="(START DATE)"
+        android:id="@+id/txtStartingDate"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fffffe31" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity = "center"
+        android:orientation = "horizontal">
+        <TextView
+            android:gravity = "center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Month-"/>
+        <TextView
+            android:gravity = "center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Day-"/>
+        <TextView
+            android:gravity = "center"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Year"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:layout_marginLeft = "45dp"
+        android:background="#ffff281c">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/monthEnd"
+            android:ems = "5"
+            android:text = "January"
+            android:layout_marginRight = "10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#fffffff9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dayEnd"
+            android:inputType = "number"
+            android:text = "1"
+            android:layout_marginRight = "10dp"
+            android:ems = "3"
+            android:background="#fffffff9" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:id="@+id/yearEnd"
+            android:text = "2015"
+            android:ems = "5"
+            android:background="#fffffff9" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize = "20dp"
+        android:text="(END DATE)"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fffffc1f" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity = "center"
+        android:id = "@+id/btnCalculate"
+        android:text = "CALCULATE"
+        android:layout_marginTop = "10dp"
+        android:onClick = "calculateDate"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:gravity = "center"
+        android:layout_marginTop = "20dp"
+        android:textSize = "25dp"
+        android:text="0 years, 0 days."
+        android:id="@+id/txtResult"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000"/>
+
+</LinearLayout>
